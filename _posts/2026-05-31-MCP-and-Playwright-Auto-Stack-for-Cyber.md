@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MCP + Playwright: A Modern Automation Stack for Cybersecurity"
+title: "MCP and Playwright Auto Stack for Cyber"
 subtitle: "How Browser Automation Is Transforming Threat Analysis, Recon, and Security Validation"
 date: 2026-06-01
 author: "Charles"
