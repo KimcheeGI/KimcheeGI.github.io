@@ -2,7 +2,7 @@
 layout: post
 title: "MCP and Playwright Auto Stack for Cyber"
 subtitle: "How Browser Automation Is Transforming Threat Analysis, Recon, and Security Validation"
-date: 2026-06-01
+date: 2026-05-31
 author: "Charles"
 tags: [cybersecurity, automation, MCP, Playwright, CISO, ISACA, threat-analysis]
 ---
