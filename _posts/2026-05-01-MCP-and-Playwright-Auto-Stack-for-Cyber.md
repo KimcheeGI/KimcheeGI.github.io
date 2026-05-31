@@ -60,4 +60,88 @@ Together, MCP orchestrates workflows while Playwright performs real browser exec
 ---
 
 ## Architecture Overview
++---------------------------+
+|     VS Code / Agent       |
+|  (MCP Client Interface)   |
++-------------+-------------+
+|
+| MCP Requests
+v
++---------------------------+
+|     MCP Playwright Server |
+|  - Screenshot Tool        |
+|  - Script Extractor       |
+|  - Network Monitor        |
+|  - DOM Dump               |
++-------------+-------------+
+|
+| Browser Automation
+v
++---------------------------+
+|       Playwright          |
+|  Headless Browser Engine  |
++---------------------------+
+---
+
+## Key Cybersecurity Workflows
+
+### 1. Phishing Analysis
+Run phishing-analysis on https://suspicious-domain.com
+
+Outputs:
+
+- Screenshot of the page  
+- External script inventory  
+- Network request log  
+- Indicators of compromise (IOCs)  
+
+### 2. Reconnaissance
+Run recon on https://target-site.com
+
+Outputs:
+
+- C2 callbacks  
+- Suspicious third‑party domains  
+- Payload delivery attempts  
+
+---
+
+## Governance & CISO Alignment
+
+This automation stack supports CISM domains:
+
+### **Domain 1 — Governance**
+- Structured, auditable workflows  
+- Clear separation of duties  
+- Policy‑aligned automation boundaries  
+
+### **Domain 2 — Risk Management**
+- Evidence‑based threat validation  
+- Attack surface mapping  
+- Real‑context analysis for risk scoring  
+
+### **Domain 3 — Security Program Development**
+- Repeatable workflows  
+- Continuous validation of controls  
+- Integration with SIEM/TI platforms  
+
+### **Domain 4 — Incident Management**
+- Faster triage  
+- Automated phishing investigation  
+- IOC extraction and enrichment  
+
+---
+
+## Example Output (Network Monitor)
+
+```json
+{
+  "url": "https://suspicious-domain.com/login",
+  "requests": [
+    { "method": "GET", "url": "https://cdn.badjs.io/loader.js" },
+    { "method": "POST", "url": "https://exfil.attacker.net/collect" }
+  ]
+}
+
+
 
