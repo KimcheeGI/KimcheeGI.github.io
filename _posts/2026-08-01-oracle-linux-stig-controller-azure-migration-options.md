@@ -2,7 +2,7 @@
 layout: post
 title: "Oracle Linux STIG Controller Migration Options for Azure"
 subtitle: "Cross-tenant image distribution, air-gapped constraints, and cyber resilience value for mission organizations"
-date: 2026-08-02
+date: 2026-08-01
 author: "Charles"
 tags: [azure, oracle-linux, ansible, stig, air-gapped, cybersecurity, dod, resilience]
 ---
